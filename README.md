@@ -1,6 +1,9 @@
-- 👋 Hi, I’m @Adityajaiswal9050
+- 👋 Hi, I’m Adityajaiswal
 - 👀 I’m interested in Cloud Computing,Competetive Programming,Cyber Security and Deep Learning.
-- 🌱 I’m currently learning about Machine Learning Algorithms.
+- 🌱 I have done various project regarding data science.
+- My skills are C++, Python.
+- I am also a google cloud platform specialist. I have work on google cloud computing foundation challenge.
+- I Have participated in various hackathons and contest and in one contest taken by leetcode i got 730th rank global.
 - 
 - 📫 you can reach me on my mail id ... satendrajaiswal767@gmail.com
 
