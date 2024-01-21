@@ -6,7 +6,7 @@
 - I Have participated in various hackathons and contest and in one contest taken by leetcode i got 730th rank global.
 - 
 - 📫 you can reach me on my mail id ... satendrajaiswal767@gmail.com
-- <img align="right" alt="Coding" width="400" src="https://miro.medium.com/v2/resize:fit:1360/0*7Q3yvSIv_t0ioJ-Z.gif">
+- <img align="right" alt="Coding" width="300" src="https://miro.medium.com/v2/resize:fit:1360/0*7Q3yvSIv_t0ioJ-Z.gif">
 
 ### Tech Stack
 #### ML/DL
