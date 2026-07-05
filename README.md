@@ -5,7 +5,7 @@
 - I am also a google cloud platform specialist. I have work on google cloud computing foundation challenge.
 - I Have participated in various hackathons and contest and in one contest taken by leetcode i got 730th rank global.
 - 
-- 📫 you can reach me on my mail id ... satendrajaiswal767@gmail.com
+- 📫 you can reach me on my mail id ... aditya.jaiswal@tu-ilmenau.de
 - <img align="right" alt="Coding" width="300" src="https://miro.medium.com/v2/resize:fit:1360/0*7Q3yvSIv_t0ioJ-Z.gif">
 
 ### Tech Stack
