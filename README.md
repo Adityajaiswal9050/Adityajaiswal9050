@@ -24,8 +24,6 @@ I'm **Aditya Jaiswal**, an AI/ML engineer pursuing an M.Sc. in Computer & System
 
 <img src="cards/contributions-monthly.svg" alt="Monthly contributions, active days, streak and busiest day, refreshed from GitHub's contribution calendar" width="100%">
 
-<img src="cards/contribution-grid.svg" alt="GitHub contribution heatmap colored in the portfolio's cyan and violet palette" width="100%">
-
 <sub>Activity is refreshed daily from GitHub GraphQL. If activity is unavailable, the cards show an explicit pending state rather than invented numbers. Private contributions appear only if GitHub's own public calendar includes them.</sub>
 
 ## Selected work
@@ -37,6 +35,10 @@ I'm **Aditya Jaiswal**, an AI/ML engineer pursuing an M.Sc. in Computer & System
 <a href="https://github.com/Adityajaiswal9050/LLM-Observability"><img src="cards/repo-llm-observability.svg" alt="LLM Observability: FastAPI, Prometheus and Grafana" width="100%"></a>
 
 <a href="https://github.com/Adityajaiswal9050/Multi-Agent-Medical-Assistant"><img src="cards/repo-multi-agent-medical-assistant.svg" alt="Multi-Agent Medical Assistant: RAG and agentic workflows" width="100%"></a>
+
+## Contributions over time
+
+<img src="cards/contribution-grid.svg" alt="GitHub contribution heatmap colored in the portfolio's cyan and violet palette" width="100%">
 
 ## Tech I build with
 
