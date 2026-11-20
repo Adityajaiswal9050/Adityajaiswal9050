@@ -46,7 +46,7 @@ jobs:
 
       - name: Fetch contributions and render cards
         env:
-          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python render_cards.py --fetch
 
       - name: Verify SVG and contribution data outputs
