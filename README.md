@@ -1,76 +1,65 @@
-# Hi, I'm Aditya Jaiswal 👋
+<div align="center">
 
-**AI Automation & Agent Systems Engineer** · M.Sc. Computer & Systems Engineering @ TU Ilmenau 🇩🇪
+<a href="https://adityajaiswal9050.github.io"><img src="cards/hero.svg" alt="Aditya Jaiswal — AI systems and machine learning engineering" width="100%"></a>
 
-I build AI pipelines — then prove they work. My focus: **agentic AI systems**, **medical imaging deep learning**, and **production-grade automation** with real tests, CI/CD, and measured results.
+<a href="https://github.com/Adityajaiswal9050?tab=repositories"><img src="cards/tile-projects.svg" alt="Browse projects" width="32.5%"></a>
+<a href="https://adityajaiswal9050.github.io/#publications"><img src="cards/tile-research.svg" alt="Research and publications" width="32.5%"></a>
+<a href="https://www.linkedin.com/in/aditya-jaiswal-2107921b0"><img src="cards/tile-connect.svg" alt="Connect on LinkedIn" width="32.5%"></a>
 
-- 🤖 Currently: AI Software Engineer @ MAH Ventures — LLM/RAG systems on a live B2B platform (Claude API, LangChain, HuggingFace)
-- 🔭 Building: an autonomous Claude agent orchestrating **8 tools via MCP** to audit data quality across 5 dimensions — with guardrails, retry logic, and **41 automated tests**
-- 🧠 Published: peer-reviewed MRI classification research (**98.72% accuracy**, ResNet-50 + Grad-CAM) and a time-series forecasting study (LSTM vs ARIMA, [arXiv:2402.06689](https://arxiv.org/abs/2402.06689))
-- 🌱 Exploring: MONAI 3D segmentation, ROS 2, and everything agentic
-- 🏆 C++: 6-star HackerRank · LeetCode Knight
-- 📫 Reach me: [aditya.jaiswal@tu-ilmenau.de](mailto:aditya.jaiswal@tu-ilmenau.de) · [Portfolio](https://adityajaiswal9050.github.io) · [LinkedIn](https://linkedin.com/in/aditya-jaiswal-2107921b0)
+</div>
 
----
+### About me
 
-## 🚀 Featured Projects
+I'm **Aditya Jaiswal**, an AI/ML engineer pursuing an M.Sc. in Computer & Systems Engineering at **TU Ilmenau**, Germany. I work across LLM agents, machine learning, computer vision, and AI systems engineering, with a focus on robust implementations and reproducible experimentation.
 
-| Project | What it does | Stack |
-|---|---|---|
-| **DataSentinel AI** | Autonomous Claude agent calling 8 MCP tools to audit data quality across 5 dimensions — guardrails, retry logic, dashboard, 41 Pytest tests in CI | Claude API · MCP · FastAPI · Docker · GitHub Actions |
-| [**Multi-Agent Medical Assistant**](https://github.com/Adityajaiswal9050/Multi-Agent-Medical-Assistant) | End-to-end medical AI: 5 imaging modalities + RAG pipeline, ~60% less manual triage time | RAG · FastAPI · Docker · full test suite |
-| [**LLM Observability**](https://github.com/Adityajaiswal9050/LLM-Observability) | Real-time model-quality monitoring: 4 live metrics, full workflow tracing, anomaly detection in <5 min | Prometheus · Grafana |
-| **CV & Medical Imaging Pipeline** *(ongoing)* | OpenCV camera calibration → MONAI 3D U-Net CT segmentation with Dice validation, moving toward automated benchmarking | Ubuntu · OpenCV · MONAI · PyTorch |
+**Current interests:** MoE inference memory management · agentic workflows and MCP · LLM observability · medical imaging.
 
----
+<div align="center">
+<a href="https://adityajaiswal9050.github.io"><img src="https://img.shields.io/badge/Portfolio-Visit-00d4ff?style=flat-square" alt="Portfolio website"></a>
+<a href="https://github.com/Adityajaiswal9050/moe-memory-lab"><img src="https://img.shields.io/badge/MoE_Memory_Lab-Research-7c3aed?style=flat-square" alt="MoE Memory Lab"></a>
+<a href="https://www.linkedin.com/in/aditya-jaiswal-2107921b0"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=flat-square" alt="LinkedIn"></a>
+</div>
 
-## 🛠️ Tech Stack
+## Contribution pulse
 
-**AI & Agents**
+<img src="cards/contributions-monthly.svg" alt="Monthly contributions, active days, streak and busiest day, refreshed from GitHub's contribution calendar" width="100%">
 
-![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
-![MCP](https://img.shields.io/badge/MCP_Protocol-000000?style=for-the-badge)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/🤗_HuggingFace-FFD21E?style=for-the-badge&logoColor=black)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![MONAI](https://img.shields.io/badge/MONAI-5EC7BB?style=for-the-badge)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Weights & Biases](https://img.shields.io/badge/W%26B-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black)
+<sub>Activity is refreshed daily from GitHub GraphQL. If activity is unavailable, the cards show an explicit pending state rather than invented numbers. Private contributions appear only if GitHub's own public calendar includes them.</sub>
 
-**Languages & Backend**
+## Selected work
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+<a href="https://github.com/Adityajaiswal9050/moe-memory-lab"><img src="cards/repo-moe-memory-lab.svg" alt="MoE Memory Lab: synthetic MoE routing and expert cache policy research" width="100%"></a>
 
-**DevOps & Tooling**
+<a href="https://github.com/Adityajaiswal9050/DataSentinel-AI"><img src="cards/repo-datasentinel-ai.svg" alt="DataSentinel AI: agentic MCP data quality platform" width="100%"></a>
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
-![Linux](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+<a href="https://github.com/Adityajaiswal9050/LLM-Observability"><img src="cards/repo-llm-observability.svg" alt="LLM Observability: FastAPI, Prometheus and Grafana" width="100%"></a>
+
+<a href="https://github.com/Adityajaiswal9050/Multi-Agent-Medical-Assistant"><img src="cards/repo-multi-agent-medical-assistant.svg" alt="Multi-Agent Medical Assistant: RAG and agentic workflows" width="100%"></a>
+
+## Contributions over time
+
+<img src="cards/contribution-grid.svg" alt="GitHub contribution heatmap colored in the portfolio's cyan and violet palette" width="100%">
+
+## Tech I build with
+
+**AI & agents** · Python · PyTorch · Hugging Face · LangChain · LangGraph · MCP · RAG
+
+**Backend & data** · FastAPI · SQL · PostgreSQL · OpenCV · scikit-learn
+
+**Systems & deployment** · Docker · GitHub Actions · AWS · Prometheus · Grafana
+
+## Research & writing
+
+- **MRI-Guided Brain Tumor Analysis:** Deep learning and Grad-CAM methodology. See [my portfolio](https://adityajaiswal9050.github.io/#publications).
+- **Time-series forecasting:** Comparative LSTM and statistical-model study. [Preprint](https://arxiv.org/abs/2402.06689).
+- **MoE Memory Lab:** A reproducible *synthetic-first* cache-replay framework. Its published results do **not** claim measured inference acceleration. [Explore the repo](https://github.com/Adityajaiswal9050/moe-memory-lab).
 
 ---
 
-## 📄 Publications
+<div align="center">
 
-- **MRI-Guided Brain Tumor Analysis: A Deep Learning & Grad-CAM Methodology** — *Peer-reviewed, IJARESM, Vol. 12, Sept. 2024* · 98.72% accuracy · F1 0.99 · 7,023 scans
-- **Stock Forecasting Using Deep Learning & Statistical Models** — *Preprint, [arXiv:2402.06689](https://arxiv.org/abs/2402.06689)* · LSTM MAE 1.18 vs ARIMA 2.8
+<sub><strong>data → model → validate → ship</strong></sub>
 
----
+<sub>Profile cards use my <a href="https://adityajaiswal9050.github.io">website palette</a>, are generated by <a href="render_cards.py">one Python script</a>, and are refreshed by <a href=".github/workflows/profile-cards.yml">GitHub Actions</a>. SVG animations respect reduced-motion preferences; run <code>STATIC=1</code> for a fixed-frame screenshot.</sub>
 
-## 📊 GitHub Stats
-
-![Aditya's GitHub stats](https://github-readme-stats.vercel.app/api?username=Adityajaiswal9050&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Adityajaiswal9050&layout=compact&theme=tokyonight&hide_border=true)
-
----
-
-*"data → model → validate → ship"*
+</div>

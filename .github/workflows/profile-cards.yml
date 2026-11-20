@@ -1,0 +1,95 @@
+name: Refresh animated profile cards
+
+on:
+  schedule:
+    - cron: "23 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "render_cards.py"
+      - "requirements-profile.txt"
+      - "data/contributions.json"
+      - ".github/workflows/profile-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: animated-profile-cards
+  cancel-in-progress: false
+
+jobs:
+  render:
+    name: Refresh public contributions and SVG cards
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout profile
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-profile.txt
+
+      - name: Install redistributable DejaVu font and subsetting tool
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-dejavu-core
+          python -m pip install -r requirements-profile.txt
+
+      - name: Fetch contributions and render cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python render_cards.py --fetch
+
+      - name: Verify SVG and contribution data outputs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          d = json.loads(Path("data/contributions.json").read_text())
+          assert d["status"] == "verified" and d["days"]
+          svg_files = sorted(Path("cards").glob("*.svg"))
+          assert len(svg_files) == 10, len(svg_files)
+          for path in svg_files:
+              root = ET.parse(path).getroot()
+              assert root.tag.endswith("svg"), path
+          print(f"Verified {len(svg_files)} SVG cards, {len(d['days'])} contribution days.")
+          PY
+
+      - name: Validate static screenshot mode
+        env:
+          STATIC: "1"
+        run: |
+          python render_cards.py --out preview_cards
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          rendered = sorted(Path("preview_cards").glob("*.svg"))
+          assert len(rendered) == 10
+          for path in rendered:
+              source = path.read_text(encoding="utf-8")
+              assert "class=\"reveal\"" in source and "@keyframes rise" not in source
+              ET.fromstring(source)
+          print("Static final-frame SVGs verified.")
+          PY
+
+      - name: Commit refreshed contribution data and SVG cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/contributions.json cards/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(profile): refresh public contribution cards"
+            git push
+          else
+            echo "No changes to commit."
+          fi
