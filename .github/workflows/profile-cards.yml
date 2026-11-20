@@ -5,7 +5,7 @@ on:
     - cron: "23 5 * * *"
   workflow_dispatch:
   push:
-    branches: [main, feat/animated-svg-profile]
+    branches: [main]
     paths:
       - "render_cards.py"
       - "requirements-profile.txt"
@@ -63,6 +63,23 @@ jobs:
               root = ET.parse(path).getroot()
               assert root.tag.endswith("svg"), path
           print(f"Verified {len(svg_files)} SVG cards, {len(d['days'])} contribution days.")
+          PY
+
+      - name: Validate static screenshot mode
+        env:
+          STATIC: "1"
+        run: |
+          python render_cards.py --out preview_cards
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          rendered = sorted(Path("preview_cards").glob("*.svg"))
+          assert len(rendered) == 10
+          for path in rendered:
+              source = path.read_text(encoding="utf-8")
+              assert "class=\"reveal\"" in source and "@keyframes rise" not in source
+              ET.fromstring(source)
+          print("Static final-frame SVGs verified.")
           PY
 
       - name: Commit refreshed contribution data and SVG cards
