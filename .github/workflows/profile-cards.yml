@@ -5,7 +5,7 @@ on:
     - cron: "23 5 * * *"
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, feat/animated-svg-profile]
     paths:
       - "render_cards.py"
       - "requirements-profile.txt"
